@@ -1,8 +1,5 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/irJpE09W)
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=10842414&assignment_repo_type=AssignmentRepo)
 # Project \#1: A Simple Twitter Client/Server System
-
-**Due: Tuesday, April 25th at 11:59pm**
 
 This project is intended to serve as introduction to concurrent objects
 and other low-level primitive objects.
@@ -500,38 +497,6 @@ In Part 5, you will test the execution time of your parallel
 implementation by averaging the elapsed time of the twitter tests. You
 are required to run the timings on a CS cluster, details are on Canvas.
 
-### Grading for Part \#5
-
-**An "A" grade for this project requires a high performing solution**;
-therefore, the breakdown for grading part 5 is as follows:
-
-  - **Full points (10 points)**: You must complete the following two
-    requirements to get full points:
-    1.  You must pass all tests (i.e., by running `go run proj1/grader
-        proj1`).
-    
-    2.  The elapsed time for a single run of the tests inside `twitter`
-        directory (`go test -v` in `proj1/twitter`) in seconds must be
-        below 150s, referred to as the "fast" threshold. The
-        elapsed time is shown as the last line produced by the tests
-        cases:
-        
-            PASS
-            ok      proj1/twitter   103.976s
-            
-            Only use the ``benchmark-proj1.sh`` script for testing. This file only has the single line ``go test proj1/twitter -v -count=1`` but when grading we will run the tests 5 times and consider the average time when running it using the ``--exclusive`` flag. 
-  - **Partial points (5 points)**: You must complete the following two
-    requirements to get partial credit:
-    1.  You must pass all tests (i.e., by running `go run proj1/grader
-        proj1`).
-    2.  The elapsed time for a single run of the tests inside `twitter`
-        directory (`go test -v` in `proj1/twitter`) in seconds must be
-        below the "slow" threshold of 180s.
-  - **No points (0 points)**: No points will be given for this part to
-    solutions that do not pass all tests by running `go run proj1/grader
-    proj1` and/or exceed the "slow" threshold for a single run of the
-    tests inside `twitter` directory (`go test -v` in `proj1/twitter`).
-
 ## Part 6: Performance Measurement
 
 Inside the `proj1/benchmark` directory, you will see the a file called
@@ -719,46 +684,3 @@ a test by test basis if your `go run proj1/grader proj1` takes in total
 more than 10 minutes. However, you will still get full points as long as
 each single test run is below 10 minutes, regardless of how long it
 takes in total.
-
-## Design, Style and Cleaning up
-
-Before you submit your final solution, you should, remove
-
-  - any `Printf` statements that you added for debugging purposes and
-  - all in-line comments of the form: "YOUR CODE HERE" and "TODO ..."
-  - Think about your function decomposition. No code duplication. This
-    homework assignment is relatively small so this shouldn't be a major
-    problem but could be in certain problems.
-
-Go does not have a strict style guide. However, use your best judgment
-from prior programming experience about style. Did you use good variable
-names? Do you have any lines that are too long, etc.
-
-As you clean up, you should periodically save your file and run your
-code through the tests to make sure that you have not broken it in the
-process.
-
-## Submission
-
-Before submitting, make sure you've added, committed, and pushed all
-your code to GitHub. You must submit your final work through Gradescope
-(linked from our Canvas site) in the "Project \#1" assignment page via
-two ways,
-
-1.  **Uploading from Github directly (recommended way)**: You can link
-    your Github account to your Gradescope account and upload the
-    correct repository based on the homework assignment. When you submit
-    your homework, a pop window will appear. Click on "Github" and then
-    "Connect to Github" to connect your Github account to Gradescope.
-    Once you connect (you will only need to do this once), then you can
-    select the repository you wish to upload and the branch (which
-    should always be "main" or "master") for this course.
-2.  **Uploading via a Zip file**: You can also upload a zip file of the
-    homework directory. Please make sure you upload the entire directory
-    and keep the initial structure the **same** as the starter code;
-    otherwise, you run the risk of not passing the automated tests.
-
-As a reminder, for this assignment, there will be **no autograder** on
-Gradescope. We will run the grader on the CS cluster and will manually
-enter in the score into Gradescope. However, you **must still submit
-your final commit to Gradescope**.
